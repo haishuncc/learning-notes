@@ -1,0 +1,25 @@
+{
+  "name": "learning-notes",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "postbuild": "pagefind --site .next/server/app --output-path public/_pagefind",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "^16.2.10",
+    "nextra": "^4.6.1",
+    "nextra-theme-docs": "^4.6.1",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "zod": "4.1.13"
+  },
+  "devDependencies": {
+    "pagefind": "^1.5.2"
+  },
+  "overrides": {
+    "postcss": "8.5.19"
+  }
+}
