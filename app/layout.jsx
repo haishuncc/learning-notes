@@ -1,17 +1,16 @@
-import { Footer, Layout, Navbar } from 'nextra-theme-docs'
-import { getPageMap } from 'nextra/page-map'
-import 'nextra-theme-docs/style.css'
+import { Layout, Navbar } from "nextra-theme-docs";
+import { getPageMap } from "nextra/page-map";
+import "nextra-theme-docs/style.css";
 
 export const metadata = {
   title: {
-    default: 'Learning Notes',
-    template: '%s | Learning Notes'
+    default: "Coding Notes",
+    template: "%s | Coding Notes",
   },
-  description: '编程学习笔记'
-}
+  description: "编程学习笔记",
+};
 
-const navbar = <Navbar logo={<b>Learning Notes</b>} />
-const footer = <Footer>Learning Notes</Footer>
+const navbar = <Navbar logo={<b>Coding Notes</b>} />;
 
 export default async function RootLayout({ children }) {
   return (
@@ -21,11 +20,10 @@ export default async function RootLayout({ children }) {
           navbar={navbar}
           pageMap={await getPageMap()}
           docsRepositoryBase="https://github.com/haishuncc/learning-notes/tree/main"
-          footer={footer}
         >
           {children}
         </Layout>
       </body>
     </html>
-  )
+  );
 }
