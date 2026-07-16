@@ -1,4 +1,4 @@
 export default {
-  index: '首页',
-  'getting-started': '如何添加笔记'
-}
+  index: "首页",
+  courses: "学习教程",
+};
