@@ -1,0 +1,120 @@
+/*
+ * 中文长文排版
+ *
+ * 只调整文档正文区域，避免影响导航栏、侧边栏和搜索等界面元素。
+ */
+article main {
+  font-size: 15.5px;
+  line-height: 1.8;
+}
+
+article main p {
+  line-height: 1.85;
+}
+
+article main li {
+  line-height: 1.75;
+}
+
+article main blockquote {
+  font-size: 0.96em;
+  line-height: 1.8;
+}
+
+article main table {
+  font-size: 14.5px;
+  line-height: 1.65;
+}
+
+/* 页面主标题：仅正文中出现的第一个 h1。 */
+article main h1:first-of-type {
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.875rem;
+  line-height: 1.38;
+  letter-spacing: -0.02em;
+}
+
+/* 长课程中的阶段标题也使用 h1，需要与页面主标题区分。 */
+article main h1:not(:first-of-type) {
+  margin-top: 3.5rem;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.45rem;
+  border-bottom: 1px solid var(--x-color-gray-200);
+  font-size: 1.55rem;
+  font-weight: 600;
+  line-height: 1.45;
+  letter-spacing: -0.015em;
+}
+
+.dark article main h1:not(:first-of-type) {
+  border-bottom-color: var(--x-color-neutral-800);
+}
+
+article main h2 {
+  margin-top: 2.75rem;
+  margin-bottom: 0.9rem;
+  padding-bottom: 0;
+  border-bottom: 0;
+  font-size: 1.375rem;
+  font-weight: 600;
+  line-height: 1.45;
+  letter-spacing: -0.012em;
+}
+
+article main h3 {
+  margin-top: 2.25rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.15rem;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: -0.008em;
+}
+
+article main h4 {
+  margin-top: 2rem;
+  margin-bottom: 0.65rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.55;
+}
+
+article main h5 {
+  margin-top: 1.75rem;
+  margin-bottom: 0.6rem;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+article main h6 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+@media (max-width: 767px) {
+  article main {
+    font-size: 15px;
+  }
+
+  article main h1:first-of-type {
+    font-size: 1.65rem;
+  }
+
+  article main h1:not(:first-of-type) {
+    margin-top: 3rem;
+    font-size: 1.4rem;
+  }
+
+  article main h2 {
+    margin-top: 2.4rem;
+    font-size: 1.25rem;
+  }
+
+  article main h3 {
+    font-size: 1.1rem;
+  }
+}
